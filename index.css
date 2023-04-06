@@ -1,0 +1,21 @@
+.commentService__area{
+display: flex;
+
+}
+
+.commentService__title{
+    margin: 50px 0 20px 50px;
+}
+.enter, .chat{
+    background: rgb(174, 174, 174);
+    border-radius: 30px;
+    border: 2px dashed blue;
+    width: 40%;
+    padding: 30px;
+    margin: 20px;
+}
+
+.chatWindow{
+    background: rgb(241, 241, 241);
+    
+}
