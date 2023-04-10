@@ -1,12 +1,14 @@
-.commentService__area{
-display: flex;
+.commentService__area {
+    display: flex;
 
 }
 
-.commentService__title{
+.commentService__title {
     margin: 50px 0 20px 50px;
 }
-.myform, .chat{
+
+.myform,
+.chat {
     background: rgb(174, 174, 174);
     border-radius: 30px;
     border: 2px dashed blue;
@@ -16,7 +18,7 @@ display: flex;
     height: 70%;
 }
 
-.chatWindow{
+.chatWindow {
     background: rgb(241, 241, 241);
     border-radius: 3px;
     padding: 0 10px;
@@ -24,20 +26,23 @@ display: flex;
     align-items: center;
 }
 
-.avatar, .nickname, .message{
+.avatar,
+.nickname,
+.message {
     margin: 3px 10px;
 }
 
-.avatar img{
+.avatar img {
     width: 40px;
     height: 40px;
 }
 
-.chat{
-background: #555;
+.chat {
+    background: #555;
 }
 
-input, .submit{
+input,
+.submit {
     font-family: arial;
     font-size: 16px;
     vertical-align: middle;

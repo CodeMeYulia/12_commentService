@@ -10,7 +10,7 @@ let firstname = document.querySelector('.firstname'); //переменная д�
 const nickname = document.querySelector('.nickname'); //переменная поля имени в чате
 // console.log(firstname.value);
 
-// firstname = "Котовасий иванЫч Маодзедун";
+// Котовасий иванЫч Маодзедун
 
 button.addEventListener('click', () => {  //отправка сообщения в чат по нажатию кнопки в форме
     avatar.innerHTML = `<img src = ${photo.value} alt="userpic">`;
@@ -28,5 +28,8 @@ let firstnameUp = ArrUpp.join(' '); //объединение элементов 
 
     nickname.textContent = `${firstnameUp}: `;
     message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //запись переданного сообщения в чат С АНТИСПАМОМ
+    
+//самоочищение поля после передачи данных
+mytext.value = '';
 });
 
