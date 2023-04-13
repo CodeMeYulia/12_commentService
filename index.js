@@ -8,6 +8,8 @@ const message = document.querySelector('.message'); //переменная ст�
 
 let firstname = document.querySelector('.firstname'); //переменная для поля фио
 const nickname = document.querySelector('.nickname'); //переменная поля имени в чате
+
+const timecode = document.querySelector('.timecode'); //переменная текущего времени в чате
 // console.log(firstname.value);
 
 // Котовасий иванЫч Маодзедун
@@ -15,6 +17,8 @@ const nickname = document.querySelector('.nickname'); //переменная п�
 button.addEventListener('click', () => {  //отправка сообщения в чат по нажатию кнопки в форме
     avatar.innerHTML = `<img src = ${photo.value} alt="userpic">`;
     // console.log(firstname.value);
+
+   
 
     const arr = (firstname.value).split(" "); //получение массива строки имени
 // console.log(arr);
@@ -26,10 +30,13 @@ for (let i=0; i < arr.length; i++) {
 let firstnameUp = ArrUpp.join(' '); //объединение элементов массива строки имени
 // console.log(firstnameUp);
 
+
     nickname.textContent = `${firstnameUp}: `;
     message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //запись переданного сообщения в чат С АНТИСПАМОМ
     
+    timecode.innerHTML = new Date().toLocaleString(); //запись текущего времени в комментарий
+
 //самоочищение поля после передачи данных
 mytext.value = '';
-});
 
+});
