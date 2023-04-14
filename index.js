@@ -15,10 +15,14 @@ const timecode = document.querySelector('.timecode'); //переменная т�
 // Котовасий иванЫч Маодзедун
 
 button.addEventListener('click', () => {  //отправка сообщения в чат по нажатию кнопки в форме
-    avatar.innerHTML = `<img src = ${photo.value} alt="userpic">`;
-    // console.log(firstname.value);
-
-   
+    // avatar.innerHTML = `<img src = ${photo.value} alt="userpic">`;
+    console.log(firstname.value);
+    console.log(photo.value);
+    if (photo.value = '') {
+        avatar.innerHTML = `<img src='https://kartinkin.net/pics/uploads/posts/2022-09/1662989910_1-kartinkin-net-p-pukhlie-koti-instagram-1.jpg' alt='cat'>`;
+    } else {
+        avatar.innerHTML  = `<img src = ${photo.value} alt="userpic">`;
+    };
 
     const arr = (firstname.value).split(" "); //получение массива строки имени
 // console.log(arr);
@@ -40,3 +44,4 @@ let firstnameUp = ArrUpp.join(' '); //объединение элементов 
 mytext.value = '';
 
 });
+
