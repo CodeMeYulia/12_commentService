@@ -12,36 +12,44 @@ const nickname = document.querySelector('.nickname'); //переменная п�
 const timecode = document.querySelector('.timecode'); //переменная текущего времени в чате
 // console.log(firstname.value);
 
-// Котовасий иванЫч Маодзедун
 
 button.addEventListener('click', () => {  //отправка сообщения в чат по нажатию кнопки в форме
-    // avatar.innerHTML = `<img src = ${photo.value} alt="userpic">`;
-    console.log(firstname.value);
-    console.log(photo.value);
-    if (photo.value = '') {
-        avatar.innerHTML = `<img src='https://kartinkin.net/pics/uploads/posts/2022-09/1662989910_1-kartinkin-net-p-pukhlie-koti-instagram-1.jpg' alt='cat'>`;
+    avatar.innerHTML = `<img src = ${photo.value} alt="userpic">`;
+console.log(photo.value);
+    // if (photo.value = '') {
+    //     avatar.innerHTML = `<img src='https://kartinkin.net/pics/uploads/posts/2022-09/1662989910_1-kartinkin-net-p-pukhlie-koti-instagram-1.jpg' alt='cat'>`;
+    // } else {
+    //     avatar.innerHTML  = `<img src = ${photo.value} alt="userpic">`;
+    // };
+
+console.log(firstname.value);
+    if (firstname.value === ''){
+        nickname.textContent = "anonimka: ";
     } else {
-        avatar.innerHTML  = `<img src = ${photo.value} alt="userpic">`;
+        const arr = (firstname.value).split(" "); //получение массива строки имени
+        // console.log(arr);
+        const ArrUpp = []; //компиляции нового массива строки имени
+        for (let i=0; i < arr.length; i++) 
+    {
+        ArrUpp.push(arr[i] = arr[i][0].toUpperCase() + arr[i].substring(1).toLowerCase()); //преобразование элементов массива строки имени
     };
+        let firstnameUp = ArrUpp.join(' '); //объединение элементов массива строки имени
+        // console.log(firstnameUp);
+    
+        nickname.textContent = `${firstnameUp}: `;  
+        console.log(nickname.textContent);
+    }
 
-    const arr = (firstname.value).split(" "); //получение массива строки имени
-// console.log(arr);
-const ArrUpp = []; //компиляции нового массива строки имени
+    // firstname.value = ("") ? nickname.textContent = "anonimka" : nickname.textContent = `${firstnameUp}: `;
 
-for (let i=0; i < arr.length; i++) {
-    ArrUpp.push(arr[i] = arr[i][0].toUpperCase() + arr[i].substring(1).toLowerCase()); //преобразование элементов массива строки имени
-};
-let firstnameUp = ArrUpp.join(' '); //объединение элементов массива строки имени
-// console.log(firstnameUp);
-
-
-    nickname.textContent = `${firstnameUp}: `;
+    timecode.innerHTML = new Date().toLocaleString(); //запись текущего времени в комментарий
+        
     message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //запись переданного сообщения в чат С АНТИСПАМОМ
     
-    timecode.innerHTML = new Date().toLocaleString(); //запись текущего времени в комментарий
-
-//самоочищение поля после передачи данных
-mytext.value = '';
+   //самоочищение поля после передачи данных
+    mytext.value = '';
 
 });
 
+
+// Котовасий иванЫч Маодзедун  https://kartinkin.net/pics/uploads/posts/2022-09/1662989910_1-kartinkin-net-p-pukhlie-koti-instagram-1.jpg
