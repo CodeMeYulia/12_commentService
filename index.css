@@ -8,9 +8,9 @@
 
 .myform,
 .chat {
-    background: rgb(174, 174, 174);
+    background: rgb(255, 193, 239);
     border-radius: 30px;
-    border: 2px dashed blue;
+    border: 2px dashed #64076d;
     width: 40%;
     padding: 30px;
     margin: 20px;
@@ -26,7 +26,15 @@
     grid-template-columns: 0.25fr 0.75fr;
     grid-row: 0.7fr 1fr;
     align-items: center;
-    
+    min-height: 40px;
+}
+
+.firstname,
+.photo,
+.mytext
+{
+    border-radius: 3px;
+    min-width: 280px;
 }
 
 .avatar,
@@ -43,7 +51,8 @@
 }
 
 .chat {
-    background: #555;
+    background: #64076d;
+    border: 2px dashed rgb(255, 193, 239);
 }
 
 input,
@@ -58,6 +67,7 @@ input,
     margin: 1px;
     height: 30px;
     padding: 0 10px;
+    border-radius: 6px;
 }
 
 .timecode {
