@@ -1,6 +1,5 @@
 .commentService__area {
     display: flex;
-
 }
 
 .commentService__title {
@@ -19,19 +18,23 @@
 }
 
 .chatWindow {
+    /* border: 1px dashed red; */
     background: rgb(241, 241, 241);
     border-radius: 3px;
     padding: 0 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    grid-row: 0.7fr 1fr;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    
 }
 
 .avatar,
 .nickname,
-.message {
-    margin: 3px 10px;
+.message,
+.timecode {
+    /* border: 1px dashed red; */
+    margin: 3px 6px;
 }
 
 .avatar img {
@@ -55,4 +58,9 @@ input,
     margin: 1px;
     height: 30px;
     padding: 0 10px;
+}
+
+.timecode {
+    font-size: 12px;
+    justify-self: end;
 }
