@@ -1,4 +1,5 @@
-const button = document.querySelector('.submit'); //переменная кнопки
+const button = document.querySelector('.submit'); //переменная кнопки отправки
+const buttReset = document.querySelector('.reset'); //переменная кнопки сброса
 const visionNick = document.getElementById('vision'); //переменная сокрытия имени
 
 const photo = document.querySelector('.photo'); //переменная для поля ссылки
@@ -76,6 +77,12 @@ button.addEventListener('click', () => {  //отправка сообщения 
    //самоочищение поля после передачи данных
     mytext.value = '';
 
+});
+
+buttReset.addEventListener('click', () => {
+    firstname.value = '';
+    photo.value = '';
+    mytext.value = '';
 });
 
 
