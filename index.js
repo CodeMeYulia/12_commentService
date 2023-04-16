@@ -11,6 +11,8 @@ let firstname = document.querySelector('.firstname'); //переменная д�
 const nickname = document.querySelector('.nickname'); //переменная поля имени в чате
 
 const timecode = document.querySelector('.timecode'); //переменная текущего времени в чате
+const chatWindow = document.querySelector('.chatWindow'); //переменная для поля сообщения в чате
+let messageline = '';
 // console.log(firstname.value);
 
 
@@ -57,8 +59,20 @@ button.addEventListener('click', () => {  //отправка сообщения 
     }
 
     timecode.innerHTML = new Date().toLocaleString(); //запись текущего времени в комментарий
-    message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //запись переданного сообщения в чат С АНТИСПАМОМ
     
+    // console.log(mytext.value);
+    mytext.value === '' ? 
+    alert('упс! я хотел что-то сказать, но похоже, забыл') : 
+    message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //если текст не введен, то предупреждение, иначе запись переданного сообщения в чат С АНТИСПАМОМ
+    
+    
+// console.log(chatWindow);
+// console.log(chatWindow.textContent);
+// console.log(chatWindow. innerHTML);
+
+    // messageline = messageline + ;
+    // chatWindow.innerHTML = messageline;
+
    //самоочищение поля после передачи данных
     mytext.value = '';
 

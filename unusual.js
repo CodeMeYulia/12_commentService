@@ -72,3 +72,46 @@
 // button2.addEventListener('click', () => {
 //     console.log(input2.value);
 // });
+
+
+// let date = new Date();
+// console.log(date);
+// let difr = (new Date() - (new Date() - 1));
+// console.log(difr);
+
+// console.log
+// (difr < (1 * 1000) ? 
+//    "прямо сейчас" : 
+//    (difr < (1000 * 60) ? 
+//     "n секунд назад" :
+//     (disr < (1000 * 60 *60) ?
+//     "m минут назад" :
+//     "15.15.15 15:15"
+//     )
+//    );
+// )
+
+
+// const formatDate = (date) => {
+//     let difr = (new Date() - date)
+//     console.log(difr);
+// }
+
+// formatDate(new Date(13.04.2023));
+
+
+// const button = document.querySelector('.button');
+// const arr = ['eniki', 'beniki', 'eli', 'vareniki'];
+// const block = document.querySelector('.block');
+// let totalString = '';
+
+// console.log(arr);
+// console.log(arr[1]);
+
+// button.addEventListener("click", () => {
+//     let i = Math.floor(Math.random() * 4);
+//     // console.log(i);
+//     // console.log(arr[i]);
+//     totalString = totalString + `<p>${arr[i]}</p>`;
+//     block.innerHTML = totalString;
+// })
