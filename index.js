@@ -31,10 +31,10 @@ button.addEventListener('click', () => {  //отправка сообщения 
         // console.log(arrPic);
         let randPic = arrPic[Math.floor(Math.random() * arrPic.length)];
         // console.log(randPic);
-        avatar.innerHTML = `<img src = ${randPic} alt="userpic">`;
+        avatar.innerHTML = `<img src = ${randPic} alt="userpic" width="40" height="40">`;
 
     } else {
-        avatar.innerHTML  = `<img src = ${photo.value} alt="userpic">`; //либо по указанной ссылке
+        avatar.innerHTML  = `<img src = ${photo.value} alt="userpic" width="40" height="40">`; //либо по указанной ссылке
     };
 
 
@@ -67,12 +67,15 @@ button.addEventListener('click', () => {  //отправка сообщения 
     message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //если текст не введен, то предупреждение, иначе запись переданного сообщения в чат С АНТИСПАМОМ
     
     
-// console.log(chatWindow);
-// console.log(chatWindow.textContent);
-// console.log(chatWindow. innerHTML);
+console.log(chatWindow);
+console.log(chatWindow.textContent);
+console.log(chatWindow.innerHTML);
 
-    // messageline = messageline + ;
-    // chatWindow.innerHTML = messageline;
+    messageline = messageline + `<div class="avatar">${avatar.innerHTML}</div>
+    <div class="timecode">${timecode.textContent}</div>
+    <div class="nickname">${nickname.textContent}</div>
+    <div class="message">${message.textContent}</div>`;
+    chatWindow.innerHTML = messageline;
 
    //самоочищение поля после передачи данных
     mytext.value = '';
