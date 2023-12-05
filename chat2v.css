@@ -1,0 +1,107 @@
+.h1{
+    text-align: center;
+    padding-top: 15px;
+    }
+    
+    .letcomment__container{
+        width: 400px;
+        height: auto;
+        background-color: yellowgreen;
+        border-radius: 20px;
+    }
+    
+    .letcomment{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+    
+    input{
+        height: 30px;
+        border-radius: 10px;
+        margin: 5px;
+        padding-left: 15px;
+        border-style: none;
+    }
+    
+    .chat{
+        max-width: 100%;
+        background-color: rgb(48, 48, 48);
+        border-radius: 10px;
+        min-height: 200px;
+        margin: 25px 0;
+        padding: 10px;
+    }
+    
+    #sendMessage{
+        max-width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: rgb(245, 59, 59);
+        color: white;
+        margin-top: 15px;
+    }
+    
+    .myMessage{
+        display: flex;
+        max-width: 95%;
+        min-height: 3dvh;
+        background-color: rgb(241, 241, 241);
+        border-radius: 5px;
+        margin: 10px;
+        color: rgb(29, 29, 29);
+        padding: 5px;
+    }
+    .ava{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .textBlock{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        justify-content: space-between;
+    }
+    
+    .personName{
+        font-style: italic;
+        padding-left:  5px;
+    }
+    
+    .now{
+        display: flex;
+        font-style: italic;
+        margin-left: 10px;
+    }
+    
+    .nowDate{
+        font-size: 12px;
+    }
+    
+    .nowHours{
+        font-size: 12px;
+        color: grey;
+    }
+    
+    .mess{
+        color: rgb(14, 56, 41);
+        padding: 5px;
+    }
+    
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    #nameBox{
+        display: flex;
+        align-items: center;
+    }
+    
+    #public{
+        padding-left: 10px;
+    }
+    

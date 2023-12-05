@@ -66,10 +66,10 @@ button.addEventListener('click', () => {  //отправка сообщения 
     alert('упс! я хотел что-то сказать, но похоже, забыл') : 
     message.textContent = (`"${mytext.value}"`).replace(/viAgrA/gi, "*****").replace(/xxx/gi, "*****"); //если текст не введен, то предупреждение, иначе запись переданного сообщения в чат С АНТИСПАМОМ
     
-    
-console.log(chatWindow);
-console.log(chatWindow.textContent);
-console.log(chatWindow.innerHTML);
+//перезаписываем строку сообщений с добавлением нового и сохранением старых
+// console.log(chatWindow);
+// console.log(chatWindow.textContent);
+// console.log(chatWindow.innerHTML);
 
     messageline = messageline + `<div class="avatar">${avatar.innerHTML}</div>
     <div class="timecode">${timecode.textContent}</div>
@@ -88,5 +88,20 @@ buttReset.addEventListener('click', () => {
     mytext.value = '';
 });
 
+// const input1 = document.querySelector('.field');
+// console.log(input1.value);
+
+// let mas = new Array(2);
+// mas[3] = 5;
+// console.log(mas[3]);
+
+// let a = new Array(2);
+// a[1] = null;
+// console.log(a);
+
+// const fruits = [ "Груша", "Яблоко", "Лимон", "Ананас",];
+// console.log(fruits.shift()); 
+// console.log(fruits);
 
 // Котовасий иванЫч Маодзедун  https://kartinkin.net/pics/uploads/posts/2022-09/1662989910_1-kartinkin-net-p-pukhlie-koti-instagram-1.jpg
+
